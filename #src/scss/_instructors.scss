@@ -1,0 +1,135 @@
+//Instructors
+.instructors {
+  margin-bottom: 150px;
+}
+
+.instructors-title {
+  margin-bottom: 60px;
+}
+
+.instructors-slider {
+  position: relative;
+}
+
+.instructor-slider__item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  min-height: 540px;
+}
+
+.square-photo {
+  align-items: start;
+}
+
+.instructor-slider__content {
+  margin-left: 65px;
+  max-width: 615px;
+}
+
+.instrucror-slider__title {
+  margin-bottom: 5px;
+}
+
+.instructor-slider__subtitle {
+  margin-bottom: 24px;
+}
+
+.istructor-slider__experience {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.experience-item {
+  width: 170px;
+  &:nth-child(1) {
+    border-right: 1px solid rgba($text, .4);
+  }
+}
+
+.experience-item + .experience-item {
+  margin-left: 30px;
+}
+
+.experience-item__number {
+  margin-bottom: 2px;
+}
+
+.instructor-slider__text {
+  margin-bottom: 60px;
+}
+
+.instructor-slider__quote {
+  font-weight: 600;
+  line-height: 150%;
+  position: relative;
+  padding-left: 65px;
+  &::before {
+    content: "«";
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 98px;
+    color: #FAE5D8;
+    position: absolute;
+    top: -48px;
+    left: 0;
+  }
+}
+
+.slider-dots {
+  margin: 63px;
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 15px;
+  background: $beige;
+  &:last-child {
+    margin-right: 0;
+  }
+  cursor: pointer;
+}
+
+.dot-active {
+  background: $orange;
+}
+
+.arrow-left {
+  width: 16px;
+  height: 28px;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../img/arrow-left.svg) center center / cover no-repeat;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.3s all;
+  &:hover {
+    opacity: 1;
+  }
+ 
+}
+
+.arrow-right {
+  width: 16px;
+  height: 28px;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../img/arrow-right.svg) center center / cover no-repeat;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.3s all;
+  &:hover {
+    opacity: 1;
+  }
+}
+
